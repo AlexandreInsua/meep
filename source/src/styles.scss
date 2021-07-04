@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+ }
+
+app-root{
+    min-height:96.4vh;
+    padding: 1rem;
+    background-color:rgba(240, 240, 240, 0.9);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+span.material-icons{
+    position: relative;
+    top: 0.4rem;
+    padding-right: 0.3rem;
+}

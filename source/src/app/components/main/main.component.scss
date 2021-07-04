@@ -1,0 +1,38 @@
+h1 {
+
+    display: inline;
+}
+nav{
+    margin: 1rem 0;
+}
+ul {
+    display: inline;
+    padding-left: -1rem;
+}
+
+ul li {
+    padding-left: 1rem;
+    list-style: none;
+    display: inline;
+
+    a{
+        min-width: 5rem;
+        display:inline-block;
+        text-decoration: none;
+        text-align: center;
+        padding: 0.5rem;
+        color: black;
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+    }
+    
+    a:hover{
+        font-size: 1rem;
+        background-color: black;
+        color: whitesmoke;
+    }
+    a:active {
+        background-color: whitesmoke;
+        color: black;
+    }
+}

@@ -1,0 +1,16 @@
+<ul *ngIf="treeOptions">
+    <li *ngFor="let node of treeOptions">
+        <span *ngIf="node.children != 0 ">
+            <span *ngIf="node.showChildren" class="material-icons">expand_more </span>
+            <span *ngIf="!node.showChildren" class="material-icons">chevron_right </span>
+        </span>
+        <span (click)="toggleChild(node)"> {{node.name}}</span>
+        <span class="input" *ngIf="node.children == 0">
+            <!-- <input type="checkbox" checked value="on" (click)="emitChange(node, $event.target.checked)"> -->
+            <input type="checkbox" id="{{node.name}}" checked value="on"
+                (click)="emitChange2(node, $event.target.checked)">
+            <label for="{{node.name}}"></label>
+        </span>
+        <app-tree *ngIf="node.showChildren" [treeOptions]="node.children"></app-tree>
+    </li>
+</ul>

@@ -1,0 +1,48 @@
+.container {
+  display:flex
+}
+
+.filter, .table-wrapper{
+  border: 1px dashed tomato;
+  margin: 1rem;
+  padding: 1rem; 
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem black;
+}
+
+.filter{
+  margin:2rem;
+  width: 30%;
+  height: 38rem;
+  // border-radius: 1rem;
+  // box-shadow: 0 0 0.5rem black;
+
+  h2{
+      display: inline;
+  }
+}
+
+mat-form-field{
+  width: 100%;
+}
+
+.table-wrapper{
+  width: 70%;
+  height: 40rem;
+}
+
+.mat-elevation-z8 {
+  box-shadow: none; 
+  border: 1px solid black;
+
+}
+
+table {
+    width: 100%;
+}
+th.mat-sort-header-sorted {
+    color: black;
+ }
+ th, td, mat-paginator{
+  background-color: rgba(240, 240, 240, 0.9);
+ }
